@@ -1,4 +1,7 @@
-$changes = Get-Content -Path "%system.teamcity.build.changedFiles.file%"
+
+$path = %system.teamcity.build.changedFiles.file%
+write $path
+$changes = Get-Content -Path $path
 
 write $changes
 
